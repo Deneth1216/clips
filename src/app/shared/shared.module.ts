@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ModalComponent } from './components/modal/modal.component';
 import { TabsContainerComponent } from './components/tabs-container/tabs-container.component';
 import { TabComponent } from './components/tab/tab.component';
+import { InputComponent } from './components/input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,15 +13,18 @@ import { TabComponent } from './components/tab/tab.component';
   declarations: [
     ModalComponent,
     TabsContainerComponent,
-    TabComponent
+    TabComponent,
+    InputComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ], 
   exports: [
     ModalComponent,
     TabsContainerComponent,
-    TabComponent
+    TabComponent,
+    InputComponent
   ],
 
 })
